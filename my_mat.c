@@ -17,11 +17,15 @@ void getmatrix(int matrix[10][10]){
             }
             char x=getchar();
             while(isdigit(x)){
+                // printf(" %d ", x-'0');
+                matrix[i][j]=matrix[i][j]*10;
                 matrix[i][j]+=x-'0';
                 x=getchar();
             }
+            // printf(", ");
         }
     }
+    // printf("\n");
 }
 int isconnected(int matrix[10][10], int a, int b){
     if(a==b){
