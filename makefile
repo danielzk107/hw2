@@ -23,3 +23,4 @@ clean:
 	rm *.o 
 	rm -f *.a
 	rm -f *.h.gch
+	rm -f connections

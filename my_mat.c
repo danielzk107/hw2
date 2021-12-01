@@ -12,11 +12,12 @@ void getmatrix(int matrix[10][10]){
     {
         for (int j = 0; j < 10; j++)
         {
-            matrix[i][j]=0;
+            if(i!=0 || j!=0){
+                matrix[i][j]=0;
+            }
             char x=getchar();
             while(isdigit(x)){
-                matrix[i][j]= matrix[i][j]*10;
-                matrix[i][j]+=atoi(&x);
+                matrix[i][j]+=x-'0';
                 x=getchar();
             }
         }
