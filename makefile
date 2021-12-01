@@ -18,6 +18,7 @@ all:
 	make main.o
 	make my_mat.a
 	ranlib my_mat.a
+	gcc main.o my_mat.o my_mat.h -o connections
 clean:
 	rm *.o 
 	rm -f *.a
